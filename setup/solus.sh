@@ -5,6 +5,13 @@
 
 # Script to setup an AOSP build environment on Solus
 
+# Switch to unstable first
+sudo eopkg dr Solus
+sudo eopkg rr Solus
+sudo eopkg ar Solus https://mirrors.rit.edu/solus/packages/unstable/eopkg-index.xml.xz
+
+
+
 sudo eopkg it -c system.devel
 sudo eopkg it openjdk-8-devel curl-devel git gnupg gperf libgcc-32bit libxslt-devel lzop ncurses-32bit-devel ncurses-devel readline-32bit-devel rsync schedtool sdl1-devel squashfs-tools unzip wxwidgets-devel zip zlib-32bit-devel lzip
 
